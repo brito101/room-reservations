@@ -10,12 +10,12 @@ geometry: "margin=2.5cm"
 fontsize: 12pt
 ---
 
-# Sumário do Resultado — Design e Implementação do Software de Reserva de Salas
+# Sumário do Resultado - Design e Implementação do Software de Reserva de Salas
 
 | Campo        | Valor                                   |
 |--------------|-----------------------------------------|
 | **Disciplina** | DevSecOps                             |
-| **Etapa SDLC** | 4 — Projeto e Implementação           |
+| **Etapa SDLC** | 4 - Projeto e Implementação           |
 | **Autor**      | [Seu Nome]                            |
 | **Data**       | 07 de maio de 2026                    |
 | **Repositório**| github.com/brito101/base-laravel-13   |
@@ -24,11 +24,11 @@ fontsize: 12pt
 
 ## Objetivo
 
-Desenvolver um sistema web de **Reserva de Salas** aplicando as fases do SDLC (*Software Development Life Cycle*), com foco na **Etapa 4 — Projeto e Implementação**. O sistema deve permitir que usuários autenticados realizem e gerenciem reservas de salas de reunião, com controles de acesso distintos por perfil.
+Desenvolver um sistema web de **Reserva de Salas** aplicando as fases do SDLC (*Software Development Life Cycle*), com foco na **Etapa 4 - Projeto e Implementação**. O sistema deve permitir que usuários autenticados realizem e gerenciem reservas de salas de reunião, com controles de acesso distintos por perfil.
 
 ---
 
-## Passo 1 — Identificação das Fases do SDLC
+## Passo 1 - Identificação das Fases do SDLC
 
 O desenvolvimento do sistema seguiu as seis fases clássicas do SDLC, adaptadas ao contexto acadêmico da disciplina de DevSecOps:
 
@@ -45,7 +45,7 @@ O desenvolvimento do sistema seguiu as seis fases clássicas do SDLC, adaptadas 
 
 ---
 
-## Passo 2 — Papéis e Responsabilidades
+## Passo 2 - Papéis e Responsabilidades
 
 ### Papéis no processo de desenvolvimento (SDLC)
 
@@ -64,7 +64,7 @@ O desenvolvimento do sistema seguiu as seis fases clássicas do SDLC, adaptadas 
 
 ---
 
-## Passo 3 — Levantamento de Requisitos
+## Passo 3 - Levantamento de Requisitos
 
 ### Requisitos Funcionais
 
@@ -102,7 +102,7 @@ O desenvolvimento do sistema seguiu as seis fases clássicas do SDLC, adaptadas 
 
 ---
 
-## Passo 4 — Design e Implementação
+## Passo 4 - Design e Implementação
 
 ### Arquitetura do Sistema
 
@@ -124,7 +124,7 @@ O sistema adota o padrão **MVC (Model-View-Controller)** do framework Laravel 1
 
 ![diagram](./screenshots/RELATORIO_rendered-6.png)
 
-### Regras de Negócio — Controle de Acesso
+### Regras de Negócio - Controle de Acesso
 
 ![diagram](./screenshots/RELATORIO_rendered-7.png)
 
@@ -144,20 +144,20 @@ O sistema adota o padrão **MVC (Model-View-Controller)** do framework Laravel 1
 | ACL | Spatie Laravel Permission | 6.x |
 | Autenticação API | JWT (tymon/jwt-auth) | 2.x |
 | 2FA | pragmarx/google2fa | 8.x |
-| Containerização | Docker / Laravel Sail | — |
+| Containerização | Docker / Laravel Sail | - |
 | Testes | PEST | 3.x |
 
 ### Telas do Sistema
 
 ---
 
-**Tela 1 — Login**
+**Tela 1 - Login**
 
 ![Tela de Login](screenshots/login.png)
 
 ---
 
-**Tela 2 — Dashboard (perfil Administrador)**
+**Tela 2 - Dashboard (perfil Administrador)**
 
 ![Dash Administrador 1](screenshots/dash-admin-1.png)
 ![Dash Administrador 2](screenshots/dash-admin-2.png)
@@ -165,31 +165,31 @@ O sistema adota o padrão **MVC (Model-View-Controller)** do framework Laravel 1
 
 ---
 
-**Tela 3 — Dashboard (perfil Usuário básico)**
+**Tela 3 - Dashboard (perfil Usuário básico)**
 
 ![Dash Usuário](screenshots/dash-user.png)
 
 ---
 
-**Tela 4 — Lista de Reservas (perfil Usuário básico)**
+**Tela 4 - Lista de Reservas (perfil Usuário básico)**
 
 ![Página de Reservas 1](screenshots/reservations-1.png)
 ![Página de Reservas 2](screenshots/reservations-2.png)
 
 ---
 
-**Tela 5 — Formulário de Nova Reserva**
+**Tela 5 - Formulário de Nova Reserva**
 
 ![Formulário de Reserva](screenshots/reservation-form.png)
 ---
 
-**Tela 6 — Validação de Conflito de Horário**
+**Tela 6 - Validação de Conflito de Horário**
 
 ![Bloqueio de Reserva](screenshots/block.png)
 
 ---
 
-**Tela 7 — Formulário de Edição (perfil Administrador)**
+**Tela 7 - Formulário de Edição (perfil Administrador)**
 
 ![Edição de Reserva](screenshots/reservation-edit.png)
 
@@ -204,7 +204,7 @@ O sistema adota o padrão **MVC (Model-View-Controller)** do framework Laravel 1
 
 **Form Requests como camada de validação:** `StoreReservationRequest` e `UpdateReservationRequest` centralizam regras de validação, autorização e verificação de sobreposição de horário, mantendo os controladores enxutos.
 
-**Regra de conflito de horário** — lógica aplicada em `withValidator()`:
+**Regra de conflito de horário** - lógica aplicada em `withValidator()`:
 
 ```
 Conflito = mesma sala + mesma data + status 'ativa'
@@ -215,7 +215,7 @@ Conflito = mesma sala + mesma data + status 'ativa'
 
 ---
 
-## Passo 5 — Plano de Testes
+## Passo 5 - Plano de Testes
 
 ### Cenários de teste
 
@@ -227,12 +227,12 @@ Conflito = mesma sala + mesma data + status 'ativa'
 | T04 | Criar reserva com conflito de horário | Mesma sala, mesma data, 09:30–10:30 | Erro "conflito de horário", reserva **não** criada |
 | T05 | Criar reserva em data passada | Data: 2026-01-01 | Erro de validação "a data deve ser hoje ou futura" |
 | T06 | Editar reserva própria ativa (Usuário) | Alterar título | Reserva atualizada com sucesso |
-| T07 | Editar reserva de outro usuário (Usuário) | Acessar URL diretamente | HTTP 403 — Proibido |
+| T07 | Editar reserva de outro usuário (Usuário) | Acessar URL diretamente | HTTP 403 - Proibido |
 | T08 | Editar reserva cancelada (qualquer perfil) | Acessar URL diretamente | Redirecionado com mensagem de erro |
 | T09 | Cancelar reserva própria ativa | Clicar em "Cancelar" | Status muda para *cancelada*, botão de editar some |
-| T10 | Cancelar reserva já cancelada (Usuário) | Acessar URL diretamente | HTTP 403 — Proibido |
+| T10 | Cancelar reserva já cancelada (Usuário) | Acessar URL diretamente | HTTP 403 - Proibido |
 | T11 | Excluir reserva própria | Clicar em "Excluir" + confirmar | Reserva removida da lista (forceDelete) |
-| T12 | Excluir reserva de outro usuário (Usuário) | Requisição DELETE direta | HTTP 403 — Proibido |
+| T12 | Excluir reserva de outro usuário (Usuário) | Requisição DELETE direta | HTTP 403 - Proibido |
 | T13 | Admin edita reserva de outro usuário | Clicar em "Editar" | Formulário exibido; campo Status visível |
 | T14 | Admin altera status de reserva ativa para cancelada | Selecionar "Cancelada" + Salvar | Status atualizado; botão Editar some na lista |
 | T15 | Dashboard exibe gráfico de barras (Usuário) | Login como `user@base.com` | Gráfico "Reservas por Mês" renderizado |

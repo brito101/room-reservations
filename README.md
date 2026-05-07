@@ -5,7 +5,7 @@
 <h1 align="center">Sistema de Reserva de Salas</h1>
 
 <p align="center">
-  <strong>Atividade Prática — DevSecOps · SDLC Etapa 4: Projeto e Implementação</strong>
+  <strong>Atividade Prática - DevSecOps · SDLC Etapa 4: Projeto e Implementação</strong>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@
 
 ## 🎯 Sobre o Projeto
 
-**Sistema de Reserva de Salas** desenvolvido como atividade prática da disciplina de **DevSecOps**, contemplando a **Etapa 4 do SDLC — Projeto e Implementação**.
+**Sistema de Reserva de Salas** desenvolvido como atividade prática da disciplina de **DevSecOps**, contemplando a **Etapa 4 do SDLC - Projeto e Implementação**.
 
 O sistema permite que usuários autenticados realizem reservas de salas de reunião com controle de disponibilidade, enquanto administradores gerenciam todo o ciclo de vida das reservas e acompanham estatísticas no painel.
 
@@ -43,7 +43,7 @@ O sistema permite que usuários autenticados realizem reservas de salas de reuni
 | Campo | Detalhe |
 |---|---|
 | Disciplina | DevSecOps |
-| Etapa SDLC | 4 — Projeto e Implementação |
+| Etapa SDLC | 4 - Projeto e Implementação |
 | Framework | Laravel 13 |
 | Padrão arquitetural | MVC |
 
@@ -69,13 +69,13 @@ O sistema permite que usuários autenticados realizem reservas de salas de reuni
 
 ### 🔐 Segurança
 - Autenticação multifator (Google 2FA)
-- Controle de acesso granular (ACL — Spatie Laravel Permission)
+- Controle de acesso granular (ACL - Spatie Laravel Permission)
 - Autenticação JWT para APIs
 - Validação de formulários e proteção CSRF
 - Verificação de sobreposição de horários na reserva
 
 ### 🎨 Interface
-- AdminLTE 3 — tema administrativo responsivo
+- AdminLTE 3 - tema administrativo responsivo
 - DataTables com exportação (CSV, Excel, PDF, Impressão)
 - Select2 para seleção de salas e status
 - PWA Ready
@@ -275,11 +275,11 @@ resources/views/admin/
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a **MIT License** — consulte o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a **MIT License** - consulte o arquivo [LICENSE](LICENSE) para detalhes.
 
 ---
 
 <p align="center">
-  Desenvolvido como atividade prática de <strong>DevSecOps</strong> — SDLC Etapa 4.
+  Desenvolvido como atividade prática de <strong>DevSecOps</strong> - SDLC Etapa 4.
 </p>
 
