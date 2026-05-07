@@ -1,0 +1,12 @@
+> **Como converter para DOCX:**
+> ```bash
+> # Instalação única do Mermaid CLI (para renderizar os diagramas)
+> npm install -g @mermaid-js/mermaid-cli
+>
+> # Pré-renderização dos diagramas (gera imagens PNG em ./diagrams/)
+> mmdc -i RELATORIO.md -o RELATORIO_rendered.md --outputFormat png
+>
+> # Conversão para DOCX
+> pandoc RELATORIO_rendered.md -o RELATORIO.docx --from markdown --reference-doc=reference.docx -V lang=pt-BR
+> ```
+> *Alternativamente, abra este arquivo no **Typora** (File → Export → Word) para conversão direta com suporte a Mermaid.*
