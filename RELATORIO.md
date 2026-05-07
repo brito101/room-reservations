@@ -3,8 +3,6 @@ title: "Sumário do Resultado - Design e Implementação do Software de Reserva 
 author: "Rodrigo Carvalho de Brito"
 date: "07 de maio de 2026"
 lang: pt-BR
-toc: true
-toc-depth: 3
 numbersections: true
 geometry: "margin=2.5cm"
 fontsize: 12pt
@@ -12,13 +10,13 @@ fontsize: 12pt
 
 # Sumário do Resultado - Design e Implementação do Software de Reserva de Salas
 
-| Campo        | Valor                                   |
-|--------------|-----------------------------------------|
-| **Disciplina** | DevSecOps                             |
-| **Etapa SDLC** | 4 - Projeto e Implementação           |
-| **Autor**      | [Seu Nome]                            |
-| **Data**       | 07 de maio de 2026                    |
-| **Repositório**| github.com/brito101/base-laravel-13   |
+| Campo          | Valor                                          |
+|----------------|------------------------------------------------|
+| **Disciplina** | DevSecOps                                      |
+| **Etapa SDLC** | 4 - Projeto e Implementação                    |
+| **Autor**      | [Seu Nome]                                     |
+| **Data**       | 07 de maio de 2026                             |
+| **Repositório**| https://github.com/brito101/room-reservations  |
 
 ---
 
