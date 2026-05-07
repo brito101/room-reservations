@@ -110,7 +110,7 @@ O sistema permite que usuários autenticados realizem reservas de salas de reuni
 
 ```bash
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/brito101/room-reservations.git
 cd room-reservations
 
 # 2. Copie o arquivo de ambiente
